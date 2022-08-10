@@ -5,7 +5,8 @@ let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
-╭─〔 %me 〕 *%ucapan %name*
+╭─〔 %me 〕
+├ *%ucapan %name*
 │
 ├ Tersisa *%limit Limit*
 ├ Role *%role*
