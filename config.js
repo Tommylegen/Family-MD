@@ -43,11 +43,11 @@ global.eror = '_*мααƒ ѕєяνєя тι∂αк ѕтαвιℓ..*_'
 global.Intervalmsg = 1800 //detik
 
 //========Url Template Buttons=========//
-global.dtu = 'ɪɴꜱᴛᴀɢʀᴀᴍ'
+global.dtu = 'Patrick'
 global.urlnya = "wibusoft.com"
 
 //============= callButtons =============//
-global.dtc = 'ᴄᴀʟʟ ᴏᴡɴᴇʀ'
+global.dtc = 'Patrick'
 global.phn = '+62 895-0505-4287'
 
 //============= Games ================//
