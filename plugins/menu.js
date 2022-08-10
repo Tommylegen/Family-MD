@@ -5,8 +5,7 @@ let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
-┌─〔 %me 〕
-├ *%ucapan %name*
+╭─〔 %me 〕 *%ucapan %name*
 │
 ├ Tersisa *%limit Limit*
 ├ Role *%role*
@@ -21,11 +20,11 @@ const defaultMenu = {
 ├ Database: %rtotalreg dari %totalreg
 ├ Github:
 ├ %github
-└────
+╰──────
 %readmore`.trim(),
-  header: '┌─〔 %category 〕',
+  header: '╭─〔 %category 〕',
   body: '├ %cmd %islimit %isPremium',
-  footer: '└────\n',
+  footer: '╰──────\n',
   after: `
 *%npmname@^%version*
 ${'```%npmdesc```'}
@@ -193,11 +192,11 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         rows: [
           { title: 'Semua Perintah', rowId: `${_p}? all` },
           { title: 'Game', rowId: `${_p}? game` },
-          { title: 'XP', rowId: `${_p}? xp` },
+          { title: 'Exp & Limit', rowId: `${_p}? xp` },
           { title: 'Stiker', rowId: `${_p}? stiker` },
           { title: 'Kerang Ajaib', rowId: `${_p}? kerangajaib` },
           { title: 'Quotes', rowId: `${_p}? quotes` },
-          { title: 'Grup', rowId: `${_p}? grup` },
+          { title: 'Menu Grup', rowId: `${_p}? grup` },
           { title: 'Premium', rowId: `${_p}? premium` },
           { title: 'Internet', rowId: `${_p}? internet` },
           { title: 'Anonymous', rowId: `${_p}? anonymous` },
@@ -212,7 +211,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
           { title: 'Jadi Bot', rowId: `${_p}? jadibot` },
           { title: 'Info', rowId: `${_p}? info` },
           { title: 'Tanpa Kategori', rowId: `${_p}? tanpakategori` },
-          { title: 'Owner', rowId: `${_p}? owner` },
+          { title: 'Menu Owner', rowId: `${_p}? owner` },
         ]
       }
     ]
